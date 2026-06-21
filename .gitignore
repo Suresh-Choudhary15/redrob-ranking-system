@@ -6,7 +6,10 @@ __pycache__/
 .env
 
 .vscode/
-
-precompute/artifacts/*
-
 .idea/
+
+# Generated package metadata
+*.egg-info/
+
+# Precomputed artifacts
+precompute/artifacts/*
