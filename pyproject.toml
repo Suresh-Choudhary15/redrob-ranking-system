@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "redrob-ranking"
+version = "0.1.0"
+description = "Recruiter intelligence ranking system — core scoring engine, CLI submission pipeline, and recruiter demo platform."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic>=2.6",
+    "pydantic-settings>=2.2",
+    "pandas>=2.2",
+    "numpy>=1.26",
+    "pyarrow>=15.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "black>=24.0",
+    "ruff>=0.4",
+]
+platform = [
+    # Reserved for Phase 8 (FastAPI + PostgreSQL/pgvector + Streamlit track).
+    # Intentionally empty in Phase 1 — populated when the platform track is built,
+    # e.g. fastapi, uvicorn, sqlalchemy, alembic, psycopg[binary], pgvector, streamlit.
+]
+
+[tool.setuptools.packages.find]
+include = ["core*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.black]
+line-length = 100
+target-version = ["py312"]
