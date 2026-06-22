@@ -1,0 +1,308 @@
+{
+  "salary_inversion": {
+    "candidate_id": "CAND_9000001",
+    "profile": {
+      "anonymized_name": "Test Candidate One",
+      "headline": "Senior Software Engineer | Backend Systems",
+      "summary": "Synthetic fixture record constructed to test salary range inversion handling in core/cleaning.py — expected_salary_range_inr_lpa.min is deliberately greater than .max.",
+      "location": "Pune, Maharashtra",
+      "country": "India",
+      "years_of_experience": 7.0,
+      "current_title": "Senior Software Engineer",
+      "current_company": "Acme Corp",
+      "current_company_size": "201-500",
+      "current_industry": "Software"
+    },
+    "career_history": [
+      {
+        "company": "Acme Corp",
+        "title": "Senior Software Engineer",
+        "start_date": "2021-06-01",
+        "end_date": null,
+        "duration_months": 60,
+        "is_current": true,
+        "industry": "Software",
+        "company_size": "201-500",
+        "description": "Backend systems engineering on distributed services."
+      }
+    ],
+    "education": [
+      {
+        "institution": "Generic State University",
+        "degree": "B.Tech",
+        "field_of_study": "Computer Science",
+        "start_year": 2013,
+        "end_year": 2017,
+        "grade": "8.0 CGPA",
+        "tier": "tier_3"
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "proficiency": "advanced",
+        "endorsements": 10,
+        "duration_months": 60
+      }
+    ],
+    "certifications": [],
+    "languages": [{ "language": "English", "proficiency": "professional" }],
+    "redrob_signals": {
+      "profile_completeness_score": 80.0,
+      "signup_date": "2024-01-01",
+      "last_active_date": "2026-05-01",
+      "open_to_work_flag": true,
+      "profile_views_received_30d": 20,
+      "applications_submitted_30d": 2,
+      "recruiter_response_rate": 0.5,
+      "avg_response_time_hours": 48.0,
+      "skill_assessment_scores": {},
+      "connection_count": 200,
+      "endorsements_received": 10,
+      "notice_period_days": 30,
+      "expected_salary_range_inr_lpa": { "min": 35.0, "max": 18.0 },
+      "preferred_work_mode": "hybrid",
+      "willing_to_relocate": false,
+      "github_activity_score": 40.0,
+      "search_appearance_30d": 50,
+      "saved_by_recruiters_30d": 2,
+      "interview_completion_rate": 0.7,
+      "offer_acceptance_rate": 0.5,
+      "verified_email": true,
+      "verified_phone": true,
+      "linkedin_connected": true
+    }
+  },
+
+  "all_optional_fields_omitted": {
+    "candidate_id": "CAND_9000002",
+    "profile": {
+      "anonymized_name": "Test Candidate Two",
+      "headline": "Data Analyst | SQL & Reporting",
+      "summary": "Synthetic fixture record with every optional field omitted, to test core/schema.py default-handling: top-level certifications and languages are entirely absent, education has no grade/tier, and the skill entry has no duration_months.",
+      "location": "Bangalore, Karnataka",
+      "country": "India",
+      "years_of_experience": 3.5,
+      "current_title": "Data Analyst",
+      "current_company": "Globex Inc",
+      "current_company_size": "501-1000",
+      "current_industry": "Manufacturing"
+    },
+    "career_history": [
+      {
+        "company": "Globex Inc",
+        "title": "Data Analyst",
+        "start_date": "2022-08-01",
+        "end_date": null,
+        "duration_months": 34,
+        "is_current": true,
+        "industry": "Manufacturing",
+        "company_size": "501-1000",
+        "description": "SQL-based reporting and dashboarding for operations."
+      }
+    ],
+    "education": [
+      {
+        "institution": "Local Engineering College",
+        "degree": "B.Sc",
+        "field_of_study": "Statistics",
+        "start_year": 2015,
+        "end_year": 2019
+      }
+    ],
+    "skills": [
+      {
+        "name": "SQL",
+        "proficiency": "intermediate",
+        "endorsements": 4
+      }
+    ],
+    "redrob_signals": {
+      "profile_completeness_score": 55.0,
+      "signup_date": "2024-03-15",
+      "last_active_date": "2026-04-10",
+      "open_to_work_flag": false,
+      "profile_views_received_30d": 8,
+      "applications_submitted_30d": 1,
+      "recruiter_response_rate": 0.3,
+      "avg_response_time_hours": 90.0,
+      "skill_assessment_scores": {},
+      "connection_count": 75,
+      "endorsements_received": 4,
+      "notice_period_days": 60,
+      "expected_salary_range_inr_lpa": { "min": 9.0, "max": 14.0 },
+      "preferred_work_mode": "onsite",
+      "willing_to_relocate": false,
+      "github_activity_score": 25.0,
+      "search_appearance_30d": 12,
+      "saved_by_recruiters_30d": 0,
+      "interview_completion_rate": 0.4,
+      "offer_acceptance_rate": 0.3,
+      "verified_email": true,
+      "verified_phone": false,
+      "linkedin_connected": false
+    }
+  },
+
+  "negative_sentinel_values": {
+    "candidate_id": "CAND_9000003",
+    "profile": {
+      "anonymized_name": "Test Candidate Three",
+      "headline": "Marketing Manager | Brand & Growth",
+      "summary": "Synthetic fixture record with both github_activity_score and offer_acceptance_rate set to -1, to test that core/cleaning.py never alters documented sentinel values.",
+      "location": "Chennai, Tamil Nadu",
+      "country": "India",
+      "years_of_experience": 9.0,
+      "current_title": "Marketing Manager",
+      "current_company": "Dunder Mifflin",
+      "current_company_size": "201-500",
+      "current_industry": "Paper Products"
+    },
+    "career_history": [
+      {
+        "company": "Dunder Mifflin",
+        "title": "Marketing Manager",
+        "start_date": "2020-02-01",
+        "end_date": null,
+        "duration_months": 76,
+        "is_current": true,
+        "industry": "Paper Products",
+        "company_size": "201-500",
+        "description": "Brand strategy and growth marketing for a regional paper-products company."
+      }
+    ],
+    "education": [
+      {
+        "institution": "Generic State University",
+        "degree": "MBA",
+        "field_of_study": "Marketing",
+        "start_year": 2009,
+        "end_year": 2011,
+        "grade": "75%",
+        "tier": "tier_3"
+      }
+    ],
+    "skills": [
+      {
+        "name": "Marketing",
+        "proficiency": "advanced",
+        "endorsements": 12,
+        "duration_months": 76
+      }
+    ],
+    "certifications": [],
+    "languages": [{ "language": "English", "proficiency": "professional" }],
+    "redrob_signals": {
+      "profile_completeness_score": 70.0,
+      "signup_date": "2023-05-10",
+      "last_active_date": "2026-01-15",
+      "open_to_work_flag": false,
+      "profile_views_received_30d": 15,
+      "applications_submitted_30d": 0,
+      "recruiter_response_rate": 0.45,
+      "avg_response_time_hours": 60.0,
+      "skill_assessment_scores": {},
+      "connection_count": 310,
+      "endorsements_received": 12,
+      "notice_period_days": 60,
+      "expected_salary_range_inr_lpa": { "min": 14.0, "max": 20.0 },
+      "preferred_work_mode": "hybrid",
+      "willing_to_relocate": false,
+      "github_activity_score": -1,
+      "search_appearance_30d": 40,
+      "saved_by_recruiters_30d": 3,
+      "interview_completion_rate": 0.6,
+      "offer_acceptance_rate": -1,
+      "verified_email": true,
+      "verified_phone": true,
+      "linkedin_connected": true
+    }
+  },
+
+  "minimal_valid": {
+    "candidate_id": "CAND_9000004",
+    "profile": {
+      "anonymized_name": "Test Candidate Four",
+      "headline": "Junior Analyst",
+      "summary": "Minimal valid synthetic fixture record — smallest structurally valid candidate: exactly one career_history entry, empty education and skills arrays, certifications/languages omitted, boundary-minimum numeric values throughout.",
+      "location": "Mumbai, Maharashtra",
+      "country": "India",
+      "years_of_experience": 0.5,
+      "current_title": "Junior Analyst",
+      "current_company": "Initech",
+      "current_company_size": "51-200",
+      "current_industry": "Software"
+    },
+    "career_history": [
+      {
+        "company": "Initech",
+        "title": "Junior Analyst",
+        "start_date": "2025-12-01",
+        "end_date": null,
+        "duration_months": 6,
+        "is_current": true,
+        "industry": "Software",
+        "company_size": "51-200",
+        "description": "Entry-level analyst role."
+      }
+    ],
+    "education": [],
+    "skills": [],
+    "redrob_signals": {
+      "profile_completeness_score": 20.0,
+      "signup_date": "2026-05-01",
+      "last_active_date": "2026-06-01",
+      "open_to_work_flag": true,
+      "profile_views_received_30d": 0,
+      "applications_submitted_30d": 0,
+      "recruiter_response_rate": 0.0,
+      "avg_response_time_hours": 0.0,
+      "skill_assessment_scores": {},
+      "connection_count": 0,
+      "endorsements_received": 0,
+      "notice_period_days": 0,
+      "expected_salary_range_inr_lpa": { "min": 0.0, "max": 0.0 },
+      "preferred_work_mode": "flexible",
+      "willing_to_relocate": false,
+      "github_activity_score": -1,
+      "search_appearance_30d": 0,
+      "saved_by_recruiters_30d": 0,
+      "interview_completion_rate": 0.0,
+      "offer_acceptance_rate": -1,
+      "verified_email": false,
+      "verified_phone": false,
+      "linkedin_connected": false
+    }
+  },
+
+  "missing_required_field": {
+    "candidate_id": "CAND_9000005",
+    "profile": {
+      "anonymized_name": "Test Candidate Five",
+      "headline": "Invalid Fixture Record",
+      "summary": "Deliberately invalid synthetic fixture record — the entire required redrob_signals object is missing. Used only in core/loading.py tests, never passed directly to core.schema.Candidate validation in a context expecting success: it exists to confirm load_candidates(strict=False) isolates and reports exactly this record as a LoadError instead of aborting the whole batch, and that strict=True raises.",
+      "location": "Delhi, Delhi",
+      "country": "India",
+      "years_of_experience": 4.0,
+      "current_title": "Test Title",
+      "current_company": "Test Company",
+      "current_company_size": "11-50",
+      "current_industry": "Software"
+    },
+    "career_history": [
+      {
+        "company": "Test Company",
+        "title": "Test Title",
+        "start_date": "2022-01-01",
+        "end_date": null,
+        "duration_months": 48,
+        "is_current": true,
+        "industry": "Software",
+        "company_size": "11-50",
+        "description": "Placeholder description for an intentionally invalid fixture record."
+      }
+    ],
+    "education": [],
+    "skills": []
+  }
+}
