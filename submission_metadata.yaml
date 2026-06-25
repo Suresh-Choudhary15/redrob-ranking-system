@@ -1,0 +1,31 @@
+# Redrob Hackathon — Submission Metadata
+# Fill in placeholders marked with [TODO] before final submission.
+
+team_name: "Suresh Choudhary"
+
+primary_contact:
+  name: "Suresh Choudhary"
+  email: "[sureshchoudhary1517@gmail.com]"
+  phone: "[+91-97395xxxxx]"
+
+github_repository: "https://github.com/Suresh-Choudhary15/redrob-ranking-system"
+
+sandbox_demo_link: "[TODO: add HuggingFace Space / Streamlit Cloud link once deployed]"
+
+ai_tools_declared:
+  - Claude
+
+compute_environment: "Personal laptop, Windows 11, Python 3.12, 8GB RAM, CPU only"
+
+team_members:
+  - name: "Suresh Choudhary"
+    email: "[sureshchoudhary1517@gmail.com]"
+
+methodology_summary: >
+  Two-stage pipeline: hybrid retrieval (dense embeddings via BGE-small +
+  BM25, fused with RRF) to narrow 100K candidates to a shortlist, followed
+  by a rule-based recruiter-intelligence scorer that applies JD-calibrated
+  weights and multiplicative modifiers for disqualifiers, behavioral
+  availability, and honeypot detection. Explanations are generated
+  deterministically from the same feature values that produced the score —
+  no LLM calls at ranking time.
