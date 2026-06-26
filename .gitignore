@@ -7,6 +7,10 @@ __pycache__/
 data/candidates.jsonl
 data/candidates_5k.jsonl
 
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
 
 .env
 
